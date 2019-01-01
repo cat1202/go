@@ -25,7 +25,7 @@ func main() {
 
 	// Strings are a series of characters between " or `
 
-	var myName string = "Derek Banas"
+	var myName string = "gary kubura"
 	catName := "this is a pretty cat!"
 
 	// Get string length
@@ -98,7 +98,7 @@ func main() {
 	fmt.Printf("%d(d) %x(x) %b(b)\n", 17, 17, 17)
 	fmt.Printf("%d(d) %x(x) %b(b)\n", 7, 7, 7)
 	fmt.Printf("%b(b) %b(b) %b(b)\n", 6, 4, 5)
-	fmt.Printf("%x(x) %x(x) %x(x)\n", 199, 237, 240)
+	fmt.Printf("%x(x) %x(x) %x(x)\n", 199, 237, 204)
 	// %e prints in scientific notation
 
 	fmt.Printf("%e \n", pi)

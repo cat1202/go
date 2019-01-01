@@ -43,6 +43,9 @@ func main() {
 	//initial length(5) (receive value of 0), capacity (max size)
 	numSlice3 := make([]int, 5, 10)
 	fmt.Println(numSlice3, len(numSlice3)) //->[0,0,0,0,0,0] 5
+	//numSlice3 := make([]int, 5, 10)
+	//fmt.Println(numSlice3, len(numSlice3)) //->[0,0,0,0,0,0] 5
+
 	//return
 	// You can copy a slice to another
 	copy(numSlice3, numSlice)
