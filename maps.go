@@ -12,6 +12,14 @@ func main() {
 	presAge["gary age is"] = 42
 	presAge["kubera age is"] = 22
 	presAge["hotcat"] = 11
+
+	tmp, isExist := presAge["hotcat"]
+	fmt.Println(tmp, isExist)
+	//return  //-> 11 true
+	tmp2 := presAge["hotcat"]
+	fmt.Println(tmp2)
+	return
+
 	fmt.Println(presAge)
 	fmt.Println(presAge["gary age is"])
 	// Get the number of items in the Map

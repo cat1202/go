@@ -2,14 +2,28 @@ package main
 
 import "fmt"
 
+// Functions allow us to reuse code and provide structure
+// func funcName(parametersPassed) returnType
+// Functions don't have access to any variables aside from those
+// passed into it
+func addThemUp(numbers []float64) float64 {
+
+	sum := 0.0
+	for _, val := range numbers {
+		// Shorthand for
+		//sum = sum + val
+		sum += val
+	}
+	return sum
+}
+
 func main() {
 
-	listOfNums := []float64{1, 2, 3, 4, 5}
-
+	listOfNums := []float64{1, 2, 3}
 	fmt.Println("Sum :", addThemUp(listOfNums))
+	return
 
 	// Get 2 values from a function
-
 	num1, num2 := next2Values(5)
 
 	fmt.Println(num1, num2)
@@ -54,26 +68,6 @@ func main() {
 	// We can catch our own errors and recover with panic & recover
 
 	demPanic()
-
-}
-
-// Functions allow us to reuse code and provide structure
-// func funcName(parametersPassed) returnType
-// Functions don't have access to any variables aside from those
-// passed into it
-
-func addThemUp(numbers []float64) float64 {
-
-	sum := 0.0
-
-	for _, val := range numbers {
-
-		// Shorthand for sum = sum + val
-		sum += val
-
-	}
-
-	return sum
 
 }
 
