@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+g_totalNum :=0
 func main() {
 
 	// A Map is a collection of
@@ -18,6 +18,12 @@ func main() {
 	//return  //-> 11 true
 	tmp2 := presAge["hotcat"]
 	fmt.Println(tmp2)
+	var 汉字ok string = "abc"
+	fmt.Println(汉字ok)
+	fmt.Printf("%T", 汉字ok)
+	g_totalNum =111
+	fmt.Println(g_totalNum)
+	
 	return
 
 	fmt.Println(presAge)
